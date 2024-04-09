@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Year Countdown</title>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="flex flex-col relative items-center h-[100vh] bg-[#6a5acd] text-white overflow-hidden justify-center">
+    
+    <h2 class="text-center tracking-[4px] uppercase">Countdown to New Year</h2>
+    <div class="text-[5em] font-bold">2025</div>
+    <div class="countdown">
+        <div id="day">00</div>
+        <div id="hour">00</div>
+        <div id="minute">00</div>
+        <div id="second">00</div>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="absolute shadow-xl scale-0 hidden cursor-pointer rounded-md top-[50%] flex flex-col items-center gap-[15px] left-[50%] translate-x-[-50%] translate-y-[-50%] bg-white text-black p-[20px]">
+        <i style="border-top-right-radius: 6px;" id="closeModal" class="fa-solid fa-xmark absolute p-[10px] right-0 top-0 bg-red-100"></i>
+        <p class="font-bold text-3xl">Finally 🎉!</p>
+        <p class="font-medium text-xl">Happy New 2025 Year 🥳</p>
+    </div>
+
+    <!-- js -->
+    <script src="index.js"></script>
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>
