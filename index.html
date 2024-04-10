@@ -12,19 +12,19 @@
 <body class="flex flex-col relative items-center h-[100vh] bg-[#6a5acd] text-white overflow-hidden justify-center">
     
     <h2 class="text-center tracking-[4px] uppercase">Countdown to New Year</h2>
-    <div class="text-[5em] font-bold">2025</div>
+    <h1 id="newYear" class="text-[5em] font-bold"></h1>
     <div class="countdown">
-        <div id="day">00</div>
-        <div id="hour">00</div>
-        <div id="minute">00</div>
-        <div id="second">00</div>
+        <p id="day">00</p>
+        <p id="hour">00</p>
+        <p id="minute">00</p>
+        <p id="second">00</p>
     </div>
 
-    <!-- Modal -->
-    <div id="modal" class="absolute shadow-xl scale-0 hidden cursor-pointer rounded-md top-[50%] flex flex-col items-center gap-[15px] left-[50%] translate-x-[-50%] translate-y-[-50%] bg-white text-black p-[20px]">
-        <i style="border-top-right-radius: 6px;" id="closeModal" class="fa-solid fa-xmark absolute p-[10px] right-0 top-0 bg-red-100"></i>
-        <p class="font-bold text-3xl">Finally 🎉!</p>
-        <p class="font-medium text-xl">Happy New 2025 Year 🥳</p>
+    <!-- modal -->
+    <div class="absolute text-black top-[-50%] left-[50%] text-center translate-x-[-50%] bg-white p-[30px] translate-y-[-50%] rounded-md">
+        <i style="border-top-right-radius: 6px;" class="fa-solid fa-xmark absolute right-0 top-0 p-[10px] cursor-pointer hover:text-white hover:bg-red-600 transition-all duration-400"></i>
+        <h1 class="font-bold text-2xl mt-[.5rem]">The new year has come. 🎉</h1>
+        <p class="font-medium text-lg mt-[.5rem]">Happy new year 🥳</p>
     </div>
 
     <!-- js -->

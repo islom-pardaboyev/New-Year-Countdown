@@ -2,13 +2,11 @@ const dayEl = document.querySelector('#day');
 const hourEl = document.querySelector('#hour');
 const minuteEl = document.querySelector('#minute');
 const secondEl = document.querySelector('#second');
+const newYearEl = document.querySelector('#newYear');
 
-const exampleYear = new Date().getFullYear() + 1;
+const nowYear = new Date().getFullYear() + 1;
 
-const newYearDate = new Date(`Jan 1, ${exampleYear} 00:00:00`).getTime();
-
-const modal = document.querySelector('#modal');
-const closeModal = document.querySelector('#closeModal');
+const newYearDate = new Date(`Jan 1, ${nowYear} 00:00:00`).getTime();
 
 updateCountDown();
 
@@ -24,14 +22,7 @@ function updateCountDown() {
     hourEl.innerHTML = hours;
     minuteEl.innerHTML = minutes;
     secondEl.innerHTML = seconds;
+    newYearEl.innerHTML = nowYear;
 
-    setTimeout(updateCountDown, 1000); // Changed the delay to 1000 milliseconds (1 second)
-
-    // if (now >= newYearDate) {
-    //     modal.classList.remove('scale-0', 'hidden');
-    // }
-
-    // closeModal.addEventListener('click', () => {
-    //     modal.classList.add('scale-0', 'hidden');
-    // });
+    setTimeout(updateCountDown, 1000);
 }

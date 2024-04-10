@@ -10,7 +10,7 @@
     height: 120px;
 }
 
-.countdown div{
+.countdown p{
     margin: 0 15px;
     font-size: 2.5em;
     font-weight: 500;
@@ -20,7 +20,7 @@
     width: 100px;
 }
 
-.countdown div::before{
+.countdown p::before{
     content: "";
     position: absolute;
     bottom: -30px;
