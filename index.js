@@ -24,5 +24,5 @@ function updateCountDown() {
     secondEl.innerHTML = seconds;
     newYearEl.innerHTML = nowYear;
 
-    setTimeout(updateCountDown, 1000);
+    setTimeout(updateCountDown, 100);
 }
